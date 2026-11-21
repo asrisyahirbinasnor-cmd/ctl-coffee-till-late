@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CoffeeTillLate Cafe - Order</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+	<button class="menu-button" onclick="toggleMenu()">&#9776;</button>
+	<h1>CoffeeTillLate Cafe</h1>
+	<nav id="mainNav">
+	<nav>
+	  <ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="menu.html">Menu</a></li>
+		<li><a href="order.html">Order</a></li>
+		<li><a href="about.html">About</a></li>
+		<li><a href="contact.html">Contact</a></li>
+		<li><a href="login.html">Login</a></li>
+	  </ul>
+	</nav>
+  </header>
+  
+  <main>
+	    <main>
+    <h2>Place Your Order</h2>
+    <p>Enter how many cups you want. The total price will be calculated for you.</p>
+
+    <form onsubmit="return checkOrder()">
+      <label for="customerName">Your Name</label>
+      <input type="text" id="customerName" placeholder="Enter your name">
+
+      <table>
+        <tr>
+          <th>Drink</th>
+          <th>Price (RM)</th>
+          <th>Quantity</th>
+        </tr>
+        <tr>
+          <td>Late Black</td>
+          <td>6.00</td>
+          <td><input type="number" id="qty0" value="0" min="0" max="20" oninput="calculateTotal()"></td>
+        </tr>
+        <tr>
+          <td>Late Latte</td>
+          <td>8.00</td>
+          <td><input type="number" id="qty1" value="0" min="0" max="20" oninput="calculateTotal()"></td>
+        </tr>
+        <tr>
+          <td>Late Vanilla</td>
+          <td>9.00</td>
+          <td><input type="number" id="qty2" value="0" min="0" max="20" oninput="calculateTotal()"></td>
+        </tr>
+        <tr>
+          <td>Late Spanish</td>
+          <td>9.00</td>
+          <td><input type="number" id="qty3" value="0" min="0" max="20" oninput="calculateTotal()"></td>
+        </tr>
+        <tr>
+          <td>Late Caramel</td>
+          <td>9.00</td>
+          <td><input type="number" id="qty4" value="0" min="0" max="20" oninput="calculateTotal()"></td>
+        </tr>
+        <tr>
+          <td>Butter Late (Signature)</td>
+          <td>10.00</td>
+          <td><input type="number" id="qty5" value="0" min="0" max="20" oninput="calculateTotal()"></td>
+        </tr>
+        <tr>
+          <td>Late Strawberry</td>
+          <td>10.00</td>
+          <td><input type="number" id="qty6" value="0" min="0" max="20" oninput="calculateTotal()"></td>
+        </tr>
+        <tr>
+          <td>Late Chocolate</td>
+          <td>8.00</td>
+          <td><input type="number" id="qty7" value="0" min="0" max="20" oninput="calculateTotal()"></td>
+        </tr>
+        <tr>
+          <td>Late Mocha</td>
+          <td>9.00</td>
+          <td><input type="number" id="qty8" value="0" min="0" max="20" oninput="calculateTotal()"></td>
+        </tr>
+      </table>
+
+      <h3>Total: RM <span id="totalPrice">0.00</span></h3>
+
+      <button type="submit">Place Order</button>
+      <p id="orderMessage"></p>
+    </form>
+  </main>
+  
+  <footer>
+	<p>&copy; 2026 CTL Cafe. All rights reserved.</p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

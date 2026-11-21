@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CoffeeTillLate Cafe - Menu</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+	<button class="menu-button" onclick="toggleMenu()">&#9776;</button>
+	<h1>CoffeeTillLate Cafe</h1>
+	<nav id="mainNav">
+	<nav>
+	  <ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="menu.html">Menu</a></li>
+		<li><a href="order.html">Order</a></li>
+		<li><a href="about.html">About</a></li>
+		<li><a href="contact.html">Contact</a></li>
+		<li><a href="login.html">Login</a></li>
+	  </ul>
+	</nav>
+  </header>
+  
+  <main>
+	<h2>Our Menu</h2>
+	<p>Choose your favourite drink.</p>
+	    <div class="filter-box">
+      <button onclick="filterMenu('all')">All</button>
+      <button onclick="filterMenu('coffee')">Coffee Series</button>
+      <button onclick="filterMenu('Non Coffee')">Non Coffee Series</button>
+      <input type="text" id="searchBox" placeholder="Search drink..." oninput="searchMenu()">
+    </div>
+	
+	<table>
+	  <tr>
+	    <th>Drink</th>
+		<th>Series</th>
+		<th>Price(RM)</th>
+	  </tr>
+	  <tr>
+	  <tr class="menu-row coffee">
+		<td>Late Black</td>
+		<td>Coffee</td>
+		<td>6.00</td>
+	  </tr>
+	  <tr>
+	  <tr class="menu-row coffee">
+		<td>Late Latte</td>
+		<td>Coffee</td>
+		<td>8.00</td>
+		</tr>
+	  <tr>
+	  <tr class="menu-row coffee">
+		<td>Late Vanilla</td>
+		<td>Coffee</td>
+		<td>9.00</td>
+		</tr>
+	  <tr>
+	  <tr class="menu-row coffee">
+		<td>Late Spanish</td>
+		<td>Coffee</td>
+		<td>9.00</td>
+		</tr>
+	  <tr>
+	  <tr class="menu-row coffee">
+		<td>Late Caramel</td>
+		<td>Coffee</td>
+		<td>9.00</td>
+		</tr>
+	  <tr>
+	  <tr class="menu-row coffee">
+		<td>Butter Late (Signature)</td>
+		<td>Coffee</td>
+		<td>10.00</td>
+		</tr>
+	  <tr>
+	  <tr class="menu-row Non Coffee">
+		<td>Late Strawberry Choco</td>
+		<td>Non Coffee</td>
+		<td>10.00</td>
+		</tr>
+	  <tr>
+	  <tr class="menu-row Non Coffee">
+		<td>Late Chocolate</td>
+		<td>Non Coffee</td>
+		<td>8.00</td>
+		</tr>
+	  <tr>
+	  <tr class="menu-row coffee">
+		<td>Late Mocha</td>
+		<td>Coffee</td>
+		<td>9.00</td>
+	   </tr>
+	 </table>
+  </main>
+  
+  <footer>
+	<p>&copy; 2026 CTL Cafe. All rights reserved.</p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
